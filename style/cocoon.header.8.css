@@ -1,0 +1,289 @@
+/*
+ * @ccnNote: ccn_header_style_8, ccn_hero_2. Please append ccn_context_frontend to main header styles or elements contained therein.
+ * @ccnNote: We MUST use 'ccn_morph' class for elements that have been restructured with JavaScript. Important because Live Customizer now allows them in the page body.
+ *
+ */
+
+.home4_header_top_contact li:first-child {
+  margin-right: 35px;
+}
+.header_top.home4 {
+  background-color: [[setting:color_header_style_4_top]];
+}
+.home4_header_top_contact {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.sign_up_btn.home4 .btn {
+  height: auto;
+  line-height: inherit;
+}
+.header_top_lang_widget_home4 button .btn-light:not(:disabled):not(.disabled).active:focus,
+.header_top_lang_widget_home4 button .btn-light:not(:disabled):not(.disabled):active:focus,
+.header_top_lang_widget_home4 button .show>.btn-light.dropdown-toggle:focus,
+.header_top_lang_widget_home4 button.btn.dropdown-toggle:active,
+.header_top_lang_widget_home4 button.btn.dropdown-toggle:focus {
+  background-color: transparent !important;
+  outline: none;
+  box-shadow: none;
+}
+.cart_btnes.home4 a.btn.cart_btn {
+  color: #ffffff;
+  margin-top: 15px;
+}
+.cart_btnes.home4 a.btn.cart_btn span sup {
+  margin-left: 0;
+  top: 1px;
+  font-size: 11px;
+}
+header.header-nav.ccnHeader8.menu_style_home_four {
+  background: transparent;
+  border-bottom: none;
+  padding: 10px 0;
+}
+header.header-nav.ccnHeader8.menu_style_home_four a.navbar_brand {
+  margin-top: 10px;
+}
+header.header-nav.ccnHeader8.menu_style_home_four.stricky-fixed .cart_btnes.home4 a.btn.cart_btn {
+  color: #0a0a0a;
+}
+header.header-nav.ccnHeader8.menu_style_home_four a.navbar_brand span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 10px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+header.header-nav.ccnHeader8.menu_style_home_four.stricky-fixed {
+  background-color: #ffffff;
+  border-bottom: none;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+header.header-nav.ccnHeader8.menu_style_home_four.stricky-fixed a.navbar_brand span {
+  color: #0a0a0a;
+}
+header.header-nav.ccnHeader8.menu_style_home_four a.navbar_brand:before {
+  background-color: transparent !important;
+}
+header.header-nav.ccnHeader8.menu_style_home_four .ace-responsive-menu>li>a {
+  color: #ffffff;
+}
+@media (min-width:1600px) {
+  header.header-nav.ccnHeader8.menu_style_home_four .ace-responsive-menu>li>a {
+    padding: 26px 35px 26px 10px;
+  }
+}
+header.header-nav.ccnHeader8.menu_style_home_four .ace-responsive-menu li ul.sub-menu,
+header.header-nav.ccnHeader8.menu_style_home_four .ace-responsive-menu li ul.sub-menu li a {
+  color: #0a0a0a;
+  background-color: #ffffff;
+}
+header.header-nav.ccnHeader8.menu_style_home_four .ace-responsive-menu li ul.sub-menu:before {
+  background-color: #ffffff;
+}
+header.header-nav.ccnHeader8.menu_style_home_four .ace-responsive-menu>li {
+  float: right;
+}
+header.header-nav.ccnHeader8.menu_style_home_four .ace-responsive-menu li a {
+  color: #ffffff;
+  font-family: "[[setting:primary_font]]", sans-serif;
+}
+header.header-nav.ccnHeader8.menu_style_home_four .sign_up_btn .btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  height: 41px;
+  line-height: 37px;
+  font-size: 15px;
+  padding: 0px 19px;
+}
+header.header-nav.ccnHeader8.menu_style_home_four .sign_up_btn .btn:hover,
+.sign_up_btn .btn:hover {
+  color: #ffffff;
+}
+header.header-nav.ccnHeader8.menu_style_home_four.stricky-fixed .ace-responsive-menu li a {
+  color: #0a0a0a;
+}
+header.header-nav.ccnHeader8.menu_style_home_four.stricky-fixed a.navbar_brand span {
+  color: #0a0a0a;
+}
+.stylehome1.home4 .mm-navbar,
+.stylehome1.home4 .mm-panel {
+  background-color: #201b72;
+}
+.stylehome1.home4 a.mm-listitem__text,
+.stylehome1.home4 a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text {
+  color: #cecff9;
+}
+.stylehome1.home4 a.mm-listitem__text:hover,
+.stylehome1.home4 a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text:hover {
+  background-color: #151156;
+  color: #ffffff;
+}
+.ccn_header_style_8 .header-nav.menu_style_home_four {
+  position: relative;
+}
+.ccn_header_style_8 .header_top.home4 .mk-search-trigger {
+  position: relative;
+  top: 2px;
+}
+.ccn_no_hero.ccn_context_frontend header.header-nav.ccnHeader8.menu_style_home_four.navbar-scrolltofixed:not(.stricky-fixed) {
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+/* .ccn_context_frontend.ccn_no_hero .inner_page_breadcrumb {
+  margin-top: 80px; */
+/* } */
+.ccn_context_frontend:not(.ccn_hero_2) .vertical-wrapper .title-vertical,
+.ccn_context_frontend:not(.ccn_hero_2) .vertical-wrapper .title-vertical.home3 {
+  background-color: [[setting:color_primary]];
+  color: #fff;
+}
+.ccn_context_frontend:not(.ccn_hero_2) header.header-nav.ccnHeader8:not(.stricky-fixed) {
+  background: #fff;
+  height: 97px;
+}
+.ccn_context_frontend:not(.ccn_hero_2) header.header-nav.ccnHeader8 a.navbar_brand .logo2 {
+  display: block;
+}
+.ccn_context_frontend:not(.ccn_hero_2) header.header-nav.ccnHeader8 a.navbar_brand .logo1 {
+  display: none;
+}
+.ccn_context_frontend:not(.ccn_hero_2) header.header-nav.ccnHeader8.menu_style_home_four .ace-responsive-menu li a {
+  color: #0a0a0a;
+}
+/* .ccn_context_frontend:not(.ccn_hero_2) header.header-nav.ccnHeader8.menu_style_home_four a.navbar_brand span {
+  color: #0a0a0a;
+} */
+@media only screen and (max-width: 1199.98px) {
+  .stylehome1.home4:before {
+    background-color: transparent !important;
+  }
+}
+/* This is the reusable code block we use for headers who really desire to be static positioned, but we can't because of scroll jump. Margin-top them behind the absolute header instead. */
+@media only screen and (min-width: 1200px) {
+  .ccn_header_style_8 .block_cocoon_slider_1.ccn_morphed,
+  .ccn_header_style_8 .block_cocoon_slider_1_v.ccn_morphed,
+  .ccn_header_style_8 .block_cocoon_slider_2.ccn_morphed,
+  .ccn_header_style_8 .block_cocoon_slider_3.ccn_morphed,
+  .ccn_header_style_8 .block_cocoon_slider_4.ccn_morphed,
+  .ccn_header_style_8 .block_cocoon_slider_5.ccn_morphed,
+  .ccn_header_style_8 .block_cocoon_slider_6.ccn_morphed,
+  .ccn_header_style_8 .block_cocoon_hero_1.ccn_morphed,
+  .ccn_header_style_8 .block_cocoon_hero_2.ccn_morphed,
+  .ccn_header_style_8 .block_cocoon_hero_4.ccn_morphed,
+  .ccn_context_frontend .inner_page_breadcrumb {
+    margin-top: 96px;
+  }
+  .block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2) {
+    margin-top: 105px;
+  }
+}
+/* @ccnNote: end Home4 begin Home 8 */
+.ccn_context_frontend header.header-nav.ccnHeader8.menu_style_home_four.home8 .container-fluid {
+  padding: 0 70px;
+}
+.ccn_context_frontend:not(.ccn_hero_2) header.header-nav.ccnHeader8.menu_style_home_four.home8 a.navbar_brand span {
+  background: linear-gradient(to right, #835bb4 0%, #d7cf96 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo-widget.home8 span {
+  background: linear-gradient(to right, #835bb4 0%, #d7cf96 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ccn_header_style_8.ccn_header_applies-all.ccn-not-front header.header-nav.ccnHeader8.menu_style_home_four:not(.stricky-fixed) {
+  position: absolute !important;
+  z-index: 1000 !important;
+}
+.ccn_header_style_8 header.header-nav.ccnHeader8.menu_style_home_four .mk-search-trigger {
+  top: 30px;
+}
+@media only screen and (max-width:1280px) {
+  .logo-widget.home8 {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width:1200px) {
+  header.header-nav.ccnHeader8.menu_style_home_four.home8 .ace-responsive-menu>li>a {
+    padding: 18px 15px 18px 15px;
+  }
+}
+@media only screen and (max-width: 1199.98px) {
+  header.header-nav.ccnHeader8.menu_style_home_four.home8 .ace-responsive-menu li:nth-child(4) ul.sub-menu li ul.sub-menu {
+    margin-left: -520px;
+  }
+  header.header-nav.ccnHeader8.menu_style_home_four.home8 .container-fluid {
+    padding: 0 30px;
+  }
+  header.header-nav.ccnHeader8.menu_style_home_four.home8 .ace-responsive-menu>li>a {
+    padding: 23px 15px 18px 5px;
+  }
+  .logo-widget.home8 {
+    margin-left: 50px;
+  }
+  .block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2)>.container.maxw1500 {
+    max-width: none;
+    padding: 0;
+    width: 100%;
+  }
+  .block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2) .banner-style-one .slide {
+    border-radius: 0;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .logo-widget.home8 {
+    margin-left: 90px;
+  }
+}
+@media only screen and (max-width:520px) {
+  .logo-widget.home8 {
+    margin-left: 75px;
+  }
+}
+@media only screen and (max-width:479px) {
+  .logo-widget.home8 {
+    margin-left: 55px;
+  }
+}
+@media only screen and (max-width:414px) {
+  .header.stylehome1 .main_logo_home2.home8 span {
+    font-size: 16px;
+  }
+  .logo-widget.home8 {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width:400px) {
+  .header.stylehome1 .main_logo_home2.home8 span {
+    font-size: 14px;
+  }
+  .logo-widget.home8 {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width:360px) {
+  .header.stylehome1 .main_logo_home2.home8 span {
+    font-size: 12px;
+  }
+  .logo-widget.home8 span {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:320px) {
+  .header.stylehome1 .main_logo_home2.home8 span {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .logo-widget.home8 span {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,98 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template core_message/message_drawer
+
+    This template will render the message drawer.
+
+    Classes required for JS:
+    * none
+
+    Data attributes required for JS:
+    * All data attributes are required
+
+    Context variables required for this template:
+    * userid The logged in user id
+    * urls The URLs for the popover
+
+    Example context (json):
+    {}
+
+}}
+{{< core/drawer}}
+{{$drawercontent}}
+<div id="message-drawer-{{uniqid}}" class="--message-app --row message_container message_container_drawer" data-region="message-drawer" role="region">
+
+  <div class="ui_kit_button">
+    <button id="ccn-messagedrawer-close" type="button" class="btn btn-md btn-thm rounded"><i class="fa fa-times"></i></button>
+    <button data-route="view-settings" data-route-param="{{loggedinuser.id}}" aria-label="{{#str}} settings, core_message {{/str}}" role="button" class="btn btn-md btn-thm pull-right">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+    </button>
+
+    <button data-route="view-contacts" role="button" class="btn btn-md btn-thm pull-right">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      {{#str}} contacts, core_message {{/str}}
+      <span class="badge bg-primary ml-2 {{^contactrequestcount}}hidden{{/contactrequestcount}}" data-region="contact-request-count" aria-label="{{#str}} pendingcontactrequests, core_message, {{contactrequestcount}} {{/str}}">
+        {{contactrequestcount}}
+      </span>
+    </button>
+  </div>
+
+
+  <div class="inbox_user_list">
+    <div class="panel-header-container" data-region="panel-header-container">
+      {{> core_message/message_drawer_view_overview_header }}
+      {{> core_message/message_drawer_view_search_header }}
+    </div>
+    <div class="panel-body-container" data-region="panel-body-container">
+      {{> core_message/message_drawer_view_overview_body }}
+      {{> core_message/message_drawer_view_search_body }}
+    </div>
+  </div>
+
+
+  <div class="user_heading">
+    <div class="wrap" data-region="header-container">
+      {{> core_message/message_drawer_view_conversation_header }}
+      {{> core_message/message_drawer_view_contacts_header }}
+      {{> core_message/message_drawer_view_settings_header }}
+    </div>
+  </div>
+  <div class="inbox_chatting_box">
+    <div class="body-container position-relative" data-region="body-container">
+      {{> core_message/message_drawer_view_contact_body }}
+      {{> core_message/message_drawer_view_contacts_body }}
+      {{> core_message/message_drawer_view_conversation_body }}
+      {{> core_message/message_drawer_view_group_info_body }}
+      {{> core_message/message_drawer_view_settings_body }}
+    </div>
+  </div>
+  <div class="footer-container" data-region="footer-container">
+    {{> core_message/message_drawer_view_conversation_footer }}
+    {{> core_message/message_drawer_view_overview_footer }}
+  </div>
+
+</div>
+{{/drawercontent}}
+{{/core/drawer}}
+
+{{#js}}
+  require(['jquery', 'core_message/message_drawer'], function($, MessageDrawer) {
+  var root = $('#message-drawer-{{uniqid}}');
+  MessageDrawer.init(root, '{{uniqid}}', false);
+  });
+{{/js}}

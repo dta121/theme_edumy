@@ -1,0 +1,106 @@
+<div class="header_top home2">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="ht_left_widget home2 float-left">
+          <ul>
+            {{#logo}}
+              <li class="list-inline-item">
+                <div class="logo-widget">
+                  <a href="{{{ ccnLogoUrl }}}" class="">
+                    {{#logo_image}}<img class="img-fluid" src="{{{headerlogo1}}}" alt="{{{sitename}}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>{{/logo_image}}
+                    {{#logotype}}<span>{{{ sitename }}}</span>{{/logotype}}
+                  </a>
+                </div>
+              </li>
+            {{/logo}}
+            {{#display_library_list}}
+              <li class="list-inline-item">
+                <div class="header_top_lang_widget">
+                  <div class="ht-widget-container">
+                    <div class="vertical-wrapper">
+                      <h2 class="title-vertical">
+                        <span class="text-title">{{#str}}library, theme_edumy{{/str}}</span> <i class="fa fa-angle-down show-down" aria-hidden="true"></i>
+                      </h2>
+                      <div class="content-vertical">
+                        {{{ ccn_librarylist }}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            {{/display_library_list}}
+            {{#header_search_bar}}
+              <li class="list-inline-item dn-1366">
+                <div class="ht_search_widget">
+                  <div class="header_search_widget">
+                    {{{ccn_globalsearch_navbar}}}
+                  </div>
+                </div>
+              </li>
+            {{/header_search_bar}}
+            {{! @ccnNote: To remove in future update}}
+            {{#has_navbar_blocks}}
+              <li class="list-inline-item">
+                <div class="ht_search_widget">
+                  <div class="header_search_widget home2">
+                    {{{ navbar_blocks }}}
+                  </div>
+                </div>
+              </li>
+            {{/has_navbar_blocks}}
+            {{! @ccnNoteEnd}}
+          </ul>
+        </div>
+        {{#phone}}
+          <div class="ht_right_widget float-right">
+            <ul class="text-right">
+              <li class="list-inline-item"><a href="tel:{{{phone}}}">{{{phone}}}</a></li>
+            </ul>
+          </div>
+        {{/phone}}
+        {{#email_address}}
+          <div class="ht_right_widget float-right mr-4">
+            <ul class="text-right">
+              <li class="list-inline-item"><a href="mailto:{{{email_address}}}">{{{email_address}}}</a></li>
+            </ul>
+          </div>
+        {{/email_address}}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Header Nav -->
+<header class="ccnHeader2 header-nav home2 style_one navbar-scrolltofixed main-menu">
+  <div class="container">
+    <!-- Ace Responsive Menu -->
+    <nav>
+      <!-- Menu Toggle btn-->
+      <div class="menu-toggle">
+        <button type="button" id="menu-btn">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Responsive Menu Structure-->
+      <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+      <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+        {{{ output.custom_menu }}}
+        {{> theme_edumy/ccn_navbar_user }}
+      </ul>
+      <ul class="sign_up_btn pull-right dn-smd mt20">
+        {{#header_search_icon}}
+          <li class="list-inline-item list_s">
+            {{> theme_edumy/ccn_navbar_search_icon }}
+          </li>
+        {{/header_search_icon}}
+        {{#cta_text}}
+          <li class="list-inline-item"><a href="{{{cta_link}}}" class="btn btn-md"><i class="{{{ cta_icon }}}"></i><span class="dn-md">{{{cta_text}}}</span></a></li>
+        {{/cta_text}}
+        {{> theme_edumy/ccn_navbar_user_popup }}
+      </ul><!-- Button trigger modal -->
+    </nav>
+    <!-- End of Responsive Menu -->
+  </div>
+</header>

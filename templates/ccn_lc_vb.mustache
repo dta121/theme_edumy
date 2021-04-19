@@ -1,0 +1,68 @@
+{{> theme_edumy/head_dashboard }}
+
+<body {{{ bodyattributes }}}>
+  {{> theme_edumy/ccn_preloader }}
+  {{{ output.standard_top_of_body_html }}}
+  <div id="ccn_lc_vb--visualize--container">
+    <div id="ccn_lc_vb--visualize">
+      <div id="ccn_lc_vb--visualize--inner">
+        <div id="ccn_visualize_container--live-customizer">
+          <div id="ccn_lc_vb--visualize--block-wrapper">
+            <h1 id="ccnTitleEl">
+              <span class="ccnTitleElTag">
+                <span class="ccn-flaticon-magic-wand"></span>
+                <strong>Cocoon {{#str}}live_customizer, theme_edumy{{/str}}</strong>
+              </span>
+              {{{ccn_lc_vb_title}}}
+            </h1>
+            <div id="ccnRefreshBlock">
+              <span class="la la-refresh" id="ccnRefresher"></span>
+              <div id="ccnRefresherTextContent">Update</div>
+            </div>
+            <div id="ccn_lc_vb--visualize--block-wrapper--inner">
+              {{{ccn_lc_vb}}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ccn_lc_vb--visualize-aside">
+      <div id="ccn_lc_vb--visualize-aside--controller">
+        <span class="la la-refresh" id="ccnRefresherAside"></span>
+      </div>
+      <div id="ccn_lc_vb--visualize-aside--inner">
+        <div class="wrapper">
+          <div class="main_content_container">
+            {{{ output.full_header }}}
+            {{{ blocks_fullwidth_top }}}
+            {{{ output.region_main_settings_menu }}}
+            {{{ output.course_content_header }}}
+            {{{ output.main_content }}}
+            {{{ output.activity_navigation }}}
+            {{{ output.course_content_footer }}}
+            {{> theme_edumy/ccn_minimal_footer }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{{ output.standard_after_main_region_html }}}
+  {{#ccn_lc_vb_repitem}}
+    <div id="ccn_lc_vb--repItem">
+      {{{ccn_lc_vb_repitem}}}
+    </div>
+  {{/ccn_lc_vb_repitem}}
+</body>
+
+</html>
+{{#js}}
+  M.util.js_pending('theme_boost/loader');
+  require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+  });
+  M.util.js_pending('theme_boost/drawer');
+  require(['theme_boost/drawer'], function(mod) {
+  mod.init();
+  M.util.js_complete('theme_boost/drawer');
+  });
+{{/js}}

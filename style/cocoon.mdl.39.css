@@ -1,0 +1,20 @@
+.modal-open .modal.show:not(.modal-in-page) {
+  background: rgba(0, 0, 0, .8);
+}
+#notice.modal.modal-dialog.modal-in-page.show #modal-footer {
+  padding-bottom: 0!important;
+}
+.availability-field label {
+  display: inline-flex;
+}
+@media (min-width: 992px) {
+  .modchoosercontainer .optionscontainer .option, .modchoosercontainer .searchresultitemscontainer .option {
+    flex-basis: calc(16.66% - 1.2rem);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .03);
+    border: 1px solid rgba(0, 0, 0, .08) !important;
+    margin: .6rem !important;
+  }
+  .modchooser .modal-footer {
+    height: auto;
+  }
+}

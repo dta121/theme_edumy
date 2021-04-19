@@ -1,0 +1,44 @@
+{{> theme_boost/head }}
+
+<body {{{ bodyattributes }}}>
+  {{> theme_edumy/ccn_preloader }}
+  <div class="wrapper">
+    {{{ output.standard_top_of_body_html }}}
+    <section class="our-log login-bg pb180">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            {{#logo}}
+              <a href="{{{ ccnLogoUrl }}}" class="login_page_logo text-center">
+                {{#logo_image}}<img class="logo2 img-fluid" src="{{{headerlogo2}}}{{!output.get_logo_url}}" alt="{{sitename}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>{{/logo_image}}
+                {{#logotype}}<span>{{{ sitename }}}</span>{{/logotype}}
+              </a>
+            {{/logo}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 offset-lg-3">
+            <div class="login_form inner_page style2">
+              {{{ output.main_content }}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  {{{ output.standard_after_main_region_html }}}
+</body>
+
+</html>
+{{#js}}
+  M.util.js_pending('theme_boost/loader');
+  require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+  });
+  M.util.js_pending('theme_boost/drawer');
+  require(['theme_boost/drawer'], function(mod) {
+  mod.init();
+  M.util.js_complete('theme_boost/drawer');
+  });
+{{/js}}

@@ -1,0 +1,46 @@
+{{#haspages}}
+  <div class="mbp_pagination">
+    <ul class="page_navigation">
+      {{#previous}}
+        <li class="page-item ccn-page-item-prev">
+          <a href="{{url}}" class="page-link" aria-label="Previous">
+            <span class="flaticon-left-arrow"></span> {{#str}}prev{{/str}}
+          </a>
+        </li>
+      {{/previous}}
+      {{#first}}
+        <li class="page-item ccn-page-item-first">
+          <a href="{{url}}" class="page-link">{{page}}</a>
+        </li>
+        <li class="page-item disabled">
+          <span class="page-link">&hellip;</a>
+        </li>
+      {{/first}}
+      {{#pages}}
+        <li class="page-item {{#active}}active{{/active}}">
+          <a href="{{#url}}{{.}}{{/url}}{{^url}}#{{/url}}" class="page-link">
+            {{page}}
+            {{#active}}
+              <span class="sr-only">{{#str}}currentinparentheses, theme_boost{{/str}}</span>
+            {{/active}}
+          </a>
+        </li>
+      {{/pages}}
+      {{#last}}
+        <li class="page-item disabled ccn-page-item-last">
+          <span class="page-link">&hellip;</a>
+        </li>
+        <li class="page-item">
+          <a href="{{url}}" class="page-link">{{page}}</a>
+        </li>
+      {{/last}}
+      {{#next}}
+        <li class="page-item ccn-page-item-next">
+          <a href="{{url}}" class="page-link" aria-label="Next">
+            {{#str}}next{{/str}} <span class="flaticon-right-arrow-1"></span>
+          </a>
+        </li>
+      {{/next}}
+    </ul>
+  </div>
+{{/haspages}}

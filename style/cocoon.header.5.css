@@ -1,0 +1,204 @@
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.sub-menu:before {
+  left: 25px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li>a {
+  padding: 27px 20px 30px 10px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five {
+  background-color: [[setting:color_header_style_5]];
+  height: 98px;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+header.header-nav.ccnHeader5.menu_style_home_five a.navbar_brand {
+  margin-top: 8px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five a.navbar_brand:before {
+  background-color: #6077dd;
+  height: 80px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart.sub-menu {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.sub-menu {
+  background-color: #ffffff;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart.sub-menu {
+  display: block;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart.sub-menu li {
+  width: auto;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart.sub-menu .dropdown_content {
+  height: auto;
+  right: 10px;
+  top: 110%;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart.sub-menu .dropdown_content .list_content .cart_btns {
+  background-color: [[setting:color_primary]];
+  border: 1px solid [[setting:color_primary]];
+  float: left;
+  line-height: 20px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart.sub-menu .dropdown_content .list_content .checkout_btns {
+  background-color: [[setting:color_secondary]];
+  border: 1px solid [[setting:color_secondary]];
+  float: right;
+  line-height: 0;
+  line-height: 20px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart a.btn.cart_btn {
+  font-size: 22px;
+  padding-top: 21px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart a.btn.cart_btn span {
+  background-color: #192675;
+  border-radius: 50%;
+  height: 17px;
+  line-height: 17px;
+  margin: -2px auto 0 -10px;
+  position: absolute;
+  text-align: center;
+  width: 17px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart a.btn.cart_btn span:before {
+  display: none;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.cart a.btn.cart_btn span sup {
+  color: #ffffff;
+  font-size: 10px;
+  z-index: 9;
+}
+header.header-nav.ccnHeader5.menu_style_home_five a.navbar_brand span,
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li a,
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li>ul>li a {
+  color: #0a0a0a;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li a,
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li>ul>li a {
+  padding-top: 27px;
+  font-family: "[[setting:primary_font]]", sans-serif;
+  text-transform: capitalize;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li ul.sub-menu li a {
+  padding: 12px 20px 12px 15px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li {
+  float: right;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li:first-child {
+  padding-left: 10px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .container-fluid {
+  padding: 0 70px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five a.navbar_brand:before {
+  display: none;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .header_search_widget .mailchimp_form button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: #0a0a0a;
+  font-size: 24px;
+  height: 45px;
+  margin-left: -65px;
+  /* New */
+  margin-top: 0;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .header_search_widget .mailchimp_form button:active,
+header.header-nav.ccnHeader5.menu_style_home_five .header_search_widget .mailchimp_form button:focus {
+  color: #000000 !important;
+  border: none;
+  box-shadow: none !important;
+  outline: none;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .sign_up_btn {
+  margin-bottom: 0;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .sign_up_btn .btn {
+  color: #0a0a0a;
+  margin-top: 10px;
+}
+.ht_left_widget.home5 .cd-dropdown-trigger::before,
+.ht_left_widget.home5 .cd-dropdown-trigger::after {
+  background-color: #ffffff;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .header_search_widget .mailchimp_form .form-control {
+  background-color: #edeff7;
+  border: 1px solid #edeff7;
+  border-radius: 25px;
+  color: #555555;
+  font-size: 14px;
+  height: 45px;
+  margin-top: 5px;
+  padding-left: 30px;
+  width: 450px;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .header_search_widget .mailchimp_form .form-control:focus {
+  border: 1px solid #edeff7;
+  box-shadow: none;
+  outline: none;
+}
+header.header-nav.ccnHeader5.menu_style_home_five .ht_left_widget.home5 .cd-dropdown-trigger {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+.home5_shop_reg_widget li:first-child {
+  margin-right: 0;
+}
+.block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2) {
+  margin-top: 95px;
+}
+@media only screen and (max-width:1440px) {
+  header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li a,
+  header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li>ul>li a {
+    padding-top: 25px;
+  }
+  ul.home5_shop_reg_widget {
+    margin-top: 19px !important;
+  }
+}
+@media only screen and (max-width:1366px) {
+  header.header-nav.ccnHeader5.menu_style_home_five .container-fluid {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width:1200px) {
+  header.header-nav.ccnHeader5.menu_style_home_five a.navbar_brand {
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width:1024px) {
+  header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu li a {
+    padding: 22px 10px 12px 10px;
+  }
+}
+@media only screen and (max-width:992px) {
+  header.header-nav.ccnHeader5.menu_style_home_five .ace-responsive-menu>li>a {
+    padding: 25px 15px 18px 5px;
+  }
+}
+/* This is the reusable code block we use for headers who really desire to be static positioned, but we can't because of scroll jump. Margin-top them behind the absolute header instead. */
+@media only screen and (min-width: 1200px) {
+  .block_cocoon_slider_1.ccn_morphed,
+  .block_cocoon_slider_1_v.ccn_morphed,
+  .block_cocoon_slider_2.ccn_morphed,
+  .block_cocoon_slider_3.ccn_morphed,
+  .block_cocoon_slider_4.ccn_morphed,
+  .block_cocoon_slider_5.ccn_morphed,
+  .block_cocoon_slider_6.ccn_morphed,
+  .block_cocoon_hero_1.ccn_morphed,
+  .block_cocoon_hero_2.ccn_morphed,
+  .block_cocoon_hero_4.ccn_morphed,
+  .ccn_context_frontend .inner_page_breadcrumb {
+    margin-top: 96px;
+  }
+  .block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2) {
+    margin-top: 115px;
+  }
+}

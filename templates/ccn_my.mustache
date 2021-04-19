@@ -1,0 +1,183 @@
+{{> theme_edumy/head_dashboard }}
+
+<body {{{ bodyattributes }}}>
+  {{> theme_edumy/ccn_preloader }}
+  <div class="wrapper">
+    {{> theme_edumy/ccn_dashboard_navbar }}
+    {{^disable_dashboard_drawer}}
+      <section class="dashboard_sidebar dn-1199 {{#dashboard_scroll_drawer}} ccn_dashboard_scroll_drawer {{/dashboard_scroll_drawer}}">
+        <div class="dashboard_sidebars">
+          <div class="user_board">
+            {{#dashboard_nav_user}}
+              <div class="user_profile">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="mt-0">{{#str}} start, theme_edumy {{/str}}</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="dashbord_nav_list">
+                {{{ output.user_menu }}}
+              </div>
+            {{/dashboard_nav_user}}
+            {{#dashboard_nav_flat}}
+              <div class="user_profile">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="mt-0">{{#str}} start, theme_edumy {{/str}}</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="dashbord_nav_list ccn_dashbord_nav_list">
+                {{> theme_boost/flat_navigation2 }}
+              </div>
+            {{/dashboard_nav_flat}}
+            <div class="pl30 pr30">
+              {{{ leftblocks }}}
+            </div>
+          </div>
+        </div>
+      </section>
+    {{/disable_dashboard_drawer}}
+    <div class="our-dashbord dashbord {{#disable_dashboard_drawer}} ccn_dashbord_disable_drawer {{/disable_dashboard_drawer}}">
+      <div class="dashboard_main_content">
+        <div class="container-fluid">
+          <div class="main_content_container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <nav class="breadcrumb_widgets {{{breadcrumb_clip_dash}}}" aria-label="breadcrumb mb30">
+                      <h4 class="title float-left">{{{ pageheading }}}</h4>
+                      <ol class="breadcrumb float-right">
+                        {{{ output.navbar }}}
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+                {{#dash_tabs}}
+                  {{#isloggedin}}
+                    <div class="row">
+                      {{#dash_tablet_1}}
+                        <div class="{{{dash_tab_col_class}}}">
+                          <a href="{{ dash_tablet_1_link }}" class="ff_one">
+                            <div class="detais">
+                              <p>{{{dash_tablet_1_subtitle}}}</p>
+                              {{{dash_tablet_1_title}}}
+                            </div>
+                            <div class="ff_icon"><span class="{{{dash_tablet_1_icon}}}"></span></div>
+                          </a>
+                        </div>
+                      {{/dash_tablet_1}}
+                      {{#dash_tablet_2}}
+                        <div class="{{{dash_tab_col_class}}}">
+                          <a href="{{ dash_tablet_2_link }}" class="ff_one style2">
+                            <div class="detais">
+                              <p>{{{dash_tablet_2_subtitle}}}</p>
+                              {{{dash_tablet_2_title}}}
+                            </div>
+                            <div class="ff_icon"><span class="{{{dash_tablet_2_icon}}}"></span></div>
+                          </a>
+                        </div>
+                      {{/dash_tablet_2}}
+                      {{#dash_tablet_3}}
+                        <div class="{{{dash_tab_col_class}}}">
+                          <a href="{{ dash_tablet_3_link }}" class="ff_one style3">
+                            <div class="detais">
+                              <p>{{{dash_tablet_3_subtitle}}}</p>
+                              {{{dash_tablet_3_title}}}
+                            </div>
+                            <div class="ff_icon"><span class="{{{dash_tablet_3_icon}}}"></span></div>
+                          </a>
+                        </div>
+                      {{/dash_tablet_3}}
+                      {{#dash_tablet_4}}
+                        <div class="{{{dash_tab_col_class}}}">
+                          <a href="{{ dash_tablet_4_link }}" class="ff_one style4">
+                            <div class="detais">
+                              <p>{{{dash_tablet_4_subtitle}}}</p>
+                              {{{dash_tablet_4_title}}}
+                            </div>
+                            <div class="ff_icon"><span class="{{{dash_tablet_4_icon}}}"></span></div>
+                          </a>
+                        </div>
+                      {{/dash_tablet_4}}
+                    </div>
+                  {{/isloggedin}}
+                {{/dash_tabs}}
+                <div class="row">
+                  {{#has_blocks_fullwidth_top}}
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      {{{ blocks_fullwidth_top }}}
+                    </div>
+                  {{/has_blocks_fullwidth_top}}
+                  {{#disable_dashboard_drawer}}
+                    {{#sidebar_left}}
+                      <div class="{{#sidebar_double}} col-lg-3 col-xl-3 {{/sidebar_double}} {{^sidebar_double}} col-lg-4 col-xl-4 {{/sidebar_double}}">
+                        <div class="ccn-sidebar-region" aria-label="{{#str}}blocks{{/str}}">
+                          {{{ leftblocks }}}
+                        </div>
+                      </div>
+                    {{/sidebar_left}}
+                    <div class="
+                      {{#sidebar_none}} col-md-12 col-lg-12 col-xl-12 {{/sidebar_none}}
+                      {{#sidebar_double}} col-lg-6 {{/sidebar_double}}
+                      {{#sidebar_single_left}} col-lg-8 col-xl-8 {{/sidebar_single_left}}
+                      {{#sidebar_single_right}} col-lg-8 col-xl-8 {{/sidebar_single_right}}
+                    ">
+                  {{/disable_dashboard_drawer}}
+                  {{^disable_dashboard_drawer}}
+                    <div class="{{#sidebar_right}}col-lg-8 col-xl-8{{/sidebar_right}} {{^sidebar_right}}col-lg-12{{/sidebar_right}}">
+                  {{/disable_dashboard_drawer}}
+                  {{{ output.standard_top_of_body_html }}}
+                  {{{ output.full_header }}}
+
+                  {{{ output.region_main_settings_menu }}}
+                  {{#has_blocks_above_content}}
+                    {{{ blocks_above_content }}}
+                  {{/has_blocks_above_content}}
+                  {{{ output.course_content_header }}}
+                  {{{ output.main_content }}}
+                  {{{ output.activity_navigation }}}
+                  {{{ output.course_content_footer }}}
+                  {{#has_blocks_below_content}}
+                    {{{ blocks_below_content }}}
+                  {{/has_blocks_below_content}}
+                </div>
+                {{#sidebar_right}}
+                  <div
+                    class="{{#disable_dashboard_drawer}} {{#sidebar_double}} col-lg-3 col-xl-3 {{/sidebar_double}} {{^sidebar_double}} col-lg-4 col-xl-4 {{/sidebar_double}}{{/disable_dashboard_drawer}} {{^disable_dashboard_drawer}}col-lg-4 col-xl-4 {{/disable_dashboard_drawer}}">
+                    <div class="ccn-sidebar-region" aria-label="{{#str}}blocks{{/str}}">
+                      {{{ sidepreblocks }}}
+                    </div>
+                  </div>
+                {{/sidebar_right}}
+                {{#has_blocks_fullwidth_bottom}}
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    {{{ blocks_fullwidth_bottom }}}
+                  </div>
+                {{/has_blocks_fullwidth_bottom}}
+              </div>
+            </div>
+          </div>
+          {{> theme_edumy/ccn_dashboard_footer }}
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  {{{ output.standard_after_main_region_html }}}
+</body>
+
+</html>
+{{#js}}
+  M.util.js_pending('theme_boost/loader');
+  require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+  });
+  M.util.js_pending('theme_boost/drawer');
+  require(['theme_boost/drawer'], function(mod) {
+  mod.init();
+  M.util.js_complete('theme_boost/drawer');
+  });
+{{/js}}

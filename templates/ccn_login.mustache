@@ -1,0 +1,34 @@
+{{> theme_boost/head }}
+<body {{{ bodyattributes }}}>
+  {{> theme_edumy/ccn_preloader }}
+  <div class="wrapper">
+    {{> theme_boost/navbar }}
+    {{{ output.standard_top_of_body_html }}}
+    <section class="our-log bgc-fa">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 offset-lg-3">
+            <div class="login_form inner_page">
+              {{{ output.main_content }}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{> theme_boost/footer }}
+  </div>
+  {{{ output.standard_after_main_region_html }}}
+</body>
+
+</html>
+{{#js}}
+  M.util.js_pending('theme_boost/loader');
+  require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+  });
+  M.util.js_pending('theme_boost/drawer');
+  require(['theme_boost/drawer'], function(mod) {
+  mod.init();
+  M.util.js_complete('theme_boost/drawer');
+  });
+{{/js}}

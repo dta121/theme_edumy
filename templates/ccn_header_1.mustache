@@ -1,0 +1,64 @@
+<header class="ccnHeader1 header-nav menu_style_home_one navbar-scrolltofixed stricky main-menu">
+  <div class="container-fluid">
+    <!-- Ace Responsive Menu -->
+    <nav>
+      <!-- Menu Toggle btn-->
+      <div class="menu-toggle">
+        <img class="nav_logo_img img-fluid" src="{{{headerlogo1}}}{{!output.get_logo_url}}" alt="{{sitename}}">
+        <button type="button" id="menu-btn">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      {{#logo}}
+        <a href="{{{ ccnLogoUrl }}}" class="navbar_brand float-left dn-smd">
+          {{#logo_image}}<img class="logo1 img-fluid" src="{{{headerlogo1}}}{{!output.get_logo_url}}" alt="{{sitename}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>{{/logo_image}}
+          {{#logo_image}}<img class="logo2 img-fluid" src="{{{headerlogo2}}}{{!output.get_logo_url}}" alt="{{sitename}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>{{/logo_image}}
+          {{#logotype}}<span>{{{ sitename }}}</span>{{/logotype}}
+        </a>
+      {{/logo}}
+      {{#display_library_list}}
+        <ul class="mt20 pull-left mr20 ml10">
+          <li class="list-inline-item">
+            <div class="header_top_lang_widget">
+              <div class="ht-widget-container">
+                <div class="vertical-wrapper">
+                  <h2 class="title-vertical home3">
+                    <span class="text-title">{{#str}}library, theme_edumy{{/str}}</span> <i class="fa fa-angle-down show-down" aria-hidden="true"></i>
+                  </h2>
+                  <div class="content-vertical">
+                    {{{ ccn_librarylist }}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      {{/display_library_list}}
+      {{#header_search_bar}}
+        <ul class="pull-left mt15 mr20 ml10">
+          <li class="list-inline-item dn-1366">
+            <div class="ht_search_widget">
+              <div class="header_search_widget">
+                {{{ccn_globalsearch_navbar}}}
+              </div>
+            </div>
+          </li>
+        </ul>
+      {{/header_search_bar}}
+      <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+        {{{ output.custom_menu }}}
+        {{> theme_edumy/ccn_navbar_user }}
+      </ul>
+      <ul class="sign_up_btn pull-right dn-smd mt20">
+        {{> theme_edumy/ccn_navbar_user_popup }}
+        {{#header_search_icon}}
+          <li class="list-inline-item list_s">
+            {{> theme_edumy/ccn_navbar_search_icon }}
+          </li>
+        {{/header_search_icon}}
+      </ul><!-- Button trigger modal -->
+    </nav>
+  </div>
+</header>

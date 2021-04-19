@@ -1,0 +1,54 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template core_message/message_drawer_view_conversation_body_message
+
+    This template will render a single message for the body of the conversation page
+    in the message drawer.
+
+    Classes required for JS:
+    * none
+
+    Data attributes required for JS:
+    * All data attributes are required
+
+    Context variables required for this template:
+    * userid The logged in user id
+    * urls The URLs for the popover
+
+    Example context (json):
+    {}
+
+}}
+<li class="media message clickable {{#fromloggedinuser}} reply {{/fromloggedinuser}}{{^fromloggedinuser}} sent {{/fromloggedinuser}}" data-region="message" data-message-id="{{id}}" role="checkbox" aria-checked="false" tabindex="0">
+  <div class="tail position-absolute"></div>
+  <div class="d-flex align-items-center ccn-msg-del-icon">
+    <span class="hidden ml-2 small text-dark" data-region="not-selected-icon">{{#pix}} i/uncheckedcircle, core {{/pix}}</span>
+    <span class="hidden ml-2 small text-primary" data-region="selected-icon">{{#pix}} i/checkedcircle, core {{/pix}}</span>
+  </div>
+  {{^fromloggedinuser}}
+    <img class="img-fluid align-self-start mr-3" src="{{{userfrom.profileimageurl}}}" alt="{{userfrom.fullname}}" aria-hidden="true" style="height:57px">
+  {{/fromloggedinuser}}
+  <div class="date_time">
+    {{^fromloggedinuser}}
+      {{userfrom.fullname}}
+    {{/fromloggedinuser}}
+    {{formattedtime}} </div>
+  <div class="media-body">
+    {{{text}}}
+  </div>
+</li>

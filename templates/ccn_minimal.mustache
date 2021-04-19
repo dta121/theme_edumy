@@ -1,0 +1,68 @@
+{{> theme_edumy/head_dashboard }}
+<body {{{ bodyattributes }}}>
+  {{> theme_edumy/ccn_preloader }}
+  <div class="wrapper">
+    {{!> theme_edumy/ccn_dashboard_navbar }}
+    <div class="our-dashbord dashbord mt40 pl25 pr25">
+      <div class="">
+        <div class="container-fluid">
+          <div class="main_content_container">
+            <div class="row">
+              <div class="col-xl-12">
+                <!-- <div class="row">
+                  <div class="col-lg-12">
+                    <nav class="breadcrumb_widgets {{{breadcrumb_clip_dash}}}" aria-label="breadcrumb mb30">
+                      <h4 class="title float-left">{{{ pageheading }}}</h4>
+                      <ol class="breadcrumb float-right">
+                        {{{ output.navbar }}}
+                      </ol>
+                    </nav>
+                  </div>
+                </div> -->
+                <div class="row">
+                  <div class="
+                    {{#sidebar_right}}
+                      col-lg-9
+                    {{/sidebar_right}}
+                    {{^sidebar_right}}
+                      col-lg-12
+                    {{/sidebar_right}}
+                  ">
+                    {{{ output.standard_top_of_body_html }}}
+                    {{{ output.full_header }}}
+                    {{{ blocks_fullwidth_top }}}
+                    {{{ output.region_main_settings_menu }}}
+                    {{{ output.course_content_header }}}
+                    {{{ output.main_content }}}
+                    {{{ output.activity_navigation }}}
+                    {{{ output.course_content_footer }}}
+                  </div>
+                  {{#sidebar_right}}
+                    <div class="col-lg-3 col-xl-3">
+                      {{{ sidepreblocks }}}
+                    </div>
+                  {{/sidebar_right}}
+                </div>
+              </div>
+            </div>
+            {{> theme_edumy/ccn_minimal_footer }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{{ output.standard_after_main_region_html }}}
+</body>
+
+</html>
+{{#js}}
+  M.util.js_pending('theme_boost/loader');
+  require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+  });
+  M.util.js_pending('theme_boost/drawer');
+  require(['theme_boost/drawer'], function(mod) {
+  mod.init();
+  M.util.js_complete('theme_boost/drawer');
+  });
+{{/js}}

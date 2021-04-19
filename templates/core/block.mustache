@@ -1,0 +1,70 @@
+{{!
+    @template theme_boost/block
+
+    Example context (json):
+    {
+        "id": "block0",
+        "class": "block block_html",
+        "showskiplink": true,
+        "type": "html",
+        "ariarole": "complementary",
+        "title": "Test block",
+        "blockinstanceid": 1,
+        "content": "<p>Hello block world!</p>"
+    }
+
+}}
+
+{{! Start Block Container }}
+<div id="{{id}}" class="
+   {{#hidden}} hidden {{/hidden}}
+   {{class}}
+   {{#hascontrols}} block_with_controls {{/hascontrols}}
+   {{^ccn_block}}
+     {{#ccn_context_course}} blog_tag_widget {{/ccn_context_course}}
+   {{/ccn_block}}"
+   role="{{ariarole}}" data-block="{{type}}" {{#arialabel}} aria-label={{#quote}}{{{arialabel}}}{{/quote}} {{/arialabel}} {{^arialabel}}
+  {{#hascontrols}} {{#title}} aria-labelledby="instance-{{blockinstanceid}}-header" {{/title}} {{/hascontrols}} {{/arialabel}} style="{{ccn_style}}">
+
+  {{! Block Skip Link }}
+  {{#showskiplink}}
+    <a href="#sb-{{skipid}}" class="sr-only sr-only-focusable">{{#str}}skipa, access, {{title}}{{/str}}</a>
+  {{/showskiplink}}
+
+  {{! Block contents }}
+
+  {{! Block header }}
+  {{^ccn_block}}
+  {{#title}}
+    <h4 id="instance-{{blockinstanceid}}-header" class="title">{{{title}}}</h4>
+  {{/title}}
+  {{/ccn_block}}
+
+
+  {{#hascontrols}}
+    <span id="instance-{{blockinstanceid}}-header" class="hidden ccn-hidden ccnInvisTitle">{{{title}}}</span>
+    <div class="ccnBlockControls">
+      {{#ccn_lc_vb}}
+        <div class="ccnBlockControls--lc-vb">
+          <a class="ccnBlockControls--lc-vb--btn" href="{{{ccn_lc_vb}}}"><span class="ccn-flaticon-magic-wand"></span> {{#str}} live_customizer, theme_edumy {{/str}}</a>
+        </div>
+      {{/ccn_lc_vb}}
+      <div class="block-controls header">
+        {{{controls}}}
+      </div>
+    </div>
+  {{/hascontrols}}
+
+  <div class="ccnBlockContent">
+  {{{content}}}
+  {{{footer}}}
+  {{{annotation}}}
+  </div>
+
+  {{! Block Skip Link Target }}
+  {{#showskiplink}}
+    <span id="sb-{{skipid}}"></span>
+  {{/showskiplink}}
+
+  {{! End Block Container }}
+</div>

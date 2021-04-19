@@ -1,0 +1,26 @@
+.block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2)>.container.maxw1500 {
+  max-width: none;
+  padding: 0;
+  width: 100%;
+}
+.block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2) .banner-style-one .slide {
+  border-radius: 0;
+}
+@media (min-width: 1200px) {
+  .ccnHeader11.stricky-fixed .header_user_notif {
+    position: absolute;
+    right: 80px;
+  }
+  header.ccnHeader11.header-nav.menu_style_home_one .sign_up_btn li.list_s a.btn.flaticon-user {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+  }
+  .ccn_context_frontend header.ccnHeader11.header-nav.menu_style_home_one:not(.stricky-fixed) a.navbar_brand {
+    z-index: 1;
+  }
+  .ccn_context_frontend .ccnHeader11.header-nav.menu_style_home_one.home10:not(.stricky-fixed) ul.ace-responsive-menu {
+    position: relative;
+    left: -100px;
+  }
+}

@@ -1,0 +1,81 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template block_myoverview/view-list
+
+    This template renders the list view for the myoverview block.
+
+    Example context (json):
+    {
+        "courses": [
+            {
+                "name": "Assignment due 1",
+                "viewurl": "https://moodlesite/course/view.php?id=2",
+                "courseimage": "https://moodlesite/pluginfile/123/course/overviewfiles/123.jpg",
+                "fullname": "course 3",
+                "hasprogress": true,
+                "progress": 10,
+                "coursecategory": "Miscellaneous"
+            }
+        ]
+    }
+}}
+
+<div class="my_course_content_list" role="list">
+  {{#courses}}
+    <div class="mc_content_list" role="listitem" data-region="course-content" data-course-id="{{{id}}}">
+      <div class="thumb">
+        <img class="img-whp" src="{{{courseimage}}}" alt=""><span class="sr-only">{{#str}}aria:courseimage, core_course{{/str}}</span>
+        <div class="overlay">
+          <ul class="mb0">
+            <li class="list-inline-item">
+              <a class="mcc_view" href="{{viewurl}}">{{#str}}view, theme_edumy{{/str}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="details">
+        <div class="mc_content">
+          <div class="ccn_mc_content_header">
+            <div class="ccn_mc_content_header_details">
+              {{$coursecategory}}
+              <p class="subtitle">{{{coursecategory}}}</p><span class="sr-only">{{#str}}aria:courseimage, core_course{{/str}}</span>{{/coursecategory}}
+              {{#showshortname}}
+                <h5 class="title">{{{shortname}}}<span class="sr-only">{{#str}}aria:courseshortname, core_course{{/str}}</span></h5>
+              {{/showshortname}}
+              <h5 class="title">{{{fullname}}} {{#showshortname}}{{{shortname}}}<span class="sr-only">{{#str}}aria:courseshortname, core_course{{/str}}</span>{{/showshortname}}</h5>
+              <div class="ccn_mc_content_header_status"><small class="tag">{{#str}}published, theme_edumy{{/str}}</small></div>
+              {{#hasprogress}}
+                <div class="ccn_mc_progress">
+                  {{> block_myoverview/progress-bar}}
+                </div>
+              {{/hasprogress}}
+              {{> core_course/favouriteicon }}
+              <span class="sr-only">
+                {{#str}}aria:coursename, core_course{{/str}}
+              </span>
+            </div>
+            <div class="ccn_mc_content_header_actions">
+              {{> block_myoverview/course-action-menu }}
+            </div>
+          </div>
+          <span class="sr-only">{{#str}}aria:coursesummary, block_myoverview{{/str}}</span>{{{summary}}}
+        </div>
+      </div>
+    </div>
+  {{/courses}}
+</div>

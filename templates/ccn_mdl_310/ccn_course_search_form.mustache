@@ -1,0 +1,69 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template core/search_input
+
+    Simple search input.
+
+    Example context (json):
+    {
+        "action": "https://moodle.local/admin/search.php",
+        "extraclasses": "my-2",
+        "inputname": "search",
+        "inform": false,
+        "searchstring": "Search settings",
+        "value": "policy",
+        "btnclass": "primary",
+        "query": "themedesigner",
+        "hiddenfields": [
+            {
+                "name": "context",
+                "value": "11"
+            }
+        ]
+    }
+}}
+<div class="candidate_revew_search_box course mb30 fn-520 {{{ extraclasses }}}">
+    {{^inform}}
+    <form autocomplete="off" action="{{{ action }}}" method="get" accept-charset="utf-8" class="form-inline my-2 my-lg-0">
+    {{/inform}}
+    {{#hiddenfields}}
+        <input type="hidden" name="{{ name }}" value="{{ value }}">
+    {{/hiddenfields}}
+
+
+        <input type="text"
+           id="searchinput-{{uniqid}}"
+           class="form-control"
+           placeholder="{{{ searchstring }}}"
+           aria-label="{{{ searchstring }}}"
+           name="{{{ inputname }}}"
+           data-region="input"
+           autocomplete="off"
+           value="{{{ query }}}"
+        >
+        <button class="btn my-2 my-sm-0" type="submit"><span class="flaticon-magnifying-glass"></span></button>
+
+
+
+    {{#otherfields}}
+        <div  class="ml-2">{{{ otherfields }}}</div>
+    {{/otherfields}}
+{{^inform}}
+    </form>
+{{/inform}}
+</div>

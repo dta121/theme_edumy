@@ -1,0 +1,111 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template core_calendar/event_details
+
+    Calendar event details.
+
+    The purpose of this template is to render the event details.
+
+    This template is used in the summary modal, day and upcoming views to output event information consistently
+    across the calendar.
+
+    Classes required for JS:
+    * none
+
+    Data attributes required for JS:
+    * none
+
+    Example context (json):
+    {
+        "formattedtime": "Wednesday, 17 April, 9:27 AM",
+        "normalisedeventtype": "Group",
+        "description": "An random event description",
+        "location": "Moodle HQ",
+        "isactionevent": "true",
+        "course": {
+            "viewurl": "http://mymoodlesite/course/view.php?id=1",
+            "fullname": "Course name"
+        },
+        "source": "Ical imported",
+        "groupname": "Group 1",
+        "iscategoryevent": "true",
+        "category": {
+            "nestedname": "Category name"
+        },
+        "iscourseevent": "true",
+        "groupname": "Group name",
+        "subscription": "true",
+        "displayeventsource": "true",
+        "subscriptionname": "Subscription name",
+        "subscriptionurl": "http://subscriptionurl"
+    }
+}}
+{{#description}}
+  <p>{{{.}}}</p>
+{{/description}}
+<ul class="mb0">
+  <li>
+    <span class="flaticon-appointment"></span> {{{formattedtime}}}
+  </li>
+  {{#normalisedeventtypetext}}
+    <li>
+      <span class="flaticon-clock"></span> {{normalisedeventtypetext}}
+    </li>
+  {{/normalisedeventtypetext}}
+  {{#location}}
+    <li>
+      <span class="flaticon-placeholder"></span> {{{.}}}
+    </li>
+  {{/location}}
+  {{#isactionevent}}
+    <li>
+      <span class="flaticon-clock"></span> <a href="{{course.viewurl}}">{{{course.fullname}}}</a>
+    </li>
+  {{/isactionevent}}
+  {{#iscategoryevent}}
+    <li>
+      <span class="flaticon-clock"></span> {{{category.nestedname}}}
+    </li>
+  {{/iscategoryevent}}
+  {{#iscourseevent}}
+    <li>
+      <span class="flaticon-clock"></span> <a href="{{url}}">{{{course.fullname}}}</a>
+    </li>
+  {{/iscourseevent}}
+  {{#groupname}}
+    <li>
+      <span class="flaticon-clock"></span> <a href="{{url}}">{{{course.fullname}}}</a>
+    </li>
+    <li>
+      <span class="flaticon-clock"></span> {{{groupname}}}
+    </li>
+  {{/groupname}}
+  {{#subscription}}
+    {{#displayeventsource}}
+      <li>
+        <span class="flaticon-clock"></span>
+        {{#subscriptionurl}}
+          <a href="{{subscriptionurl}}">{{#str}}subscriptionsource, core_calendar, {{{subscriptionname}}}{{/str}}</a>
+        {{/subscriptionurl}}
+        {{^subscriptionurl}}
+          {{#str}}subscriptionsource, core_calendar, {{{subscriptionname}}}{{/str}}
+        {{/subscriptionurl}}
+      </li>
+    {{/displayeventsource}}
+  {{/subscription}}
+</ul>

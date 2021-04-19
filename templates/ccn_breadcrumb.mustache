@@ -1,0 +1,86 @@
+{{#breadcrumb_default}}
+  <section class="inner_page_breadcrumb ccn_breadcrumb_default {{{ breadcrumb_classes }}}">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 text-center">
+          <div class="breadcrumb_content">
+            {{#if_breadcrumb_title}}
+              <h4 class="breadcrumb_title">{{{ pageheading }}}</h4>
+            {{/if_breadcrumb_title}}
+            {{#if_breadcrumb_trail}}
+              {{{ output.navbar }}}
+            {{/if_breadcrumb_trail}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{/breadcrumb_default}}
+{{#breadcrumb_m}}
+  <section class="inner_page_breadcrumb ccn_breadcrumb_m {{{ breadcrumb_classes }}}">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 text-center">
+          <div class="breadcrumb_content">
+            {{#if_breadcrumb_title}}
+              <h4 class="breadcrumb_title">{{{ pageheading }}}</h4>
+            {{/if_breadcrumb_title}}
+            {{#if_breadcrumb_trail}}
+              {{{ output.navbar }}}
+            {{/if_breadcrumb_trail}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{/breadcrumb_m}}
+{{#breadcrumb_s}}
+  <section class="inner_page_breadcrumb ccn_breadcrumb_s {{{ breadcrumb_classes }}}">
+    <div class="container">
+      <div class="breadcrumb_content">
+        <div class="row">
+          {{#if_breadcrumb_title}}
+            <div class="{{#if_breadcrumb_trail}}col-xl-6{{/if_breadcrumb_trail}}{{^if_breadcrumb_trail}}col-xl-12{{/if_breadcrumb_trail}}">
+              <h4 class="breadcrumb_title">{{{ pageheading }}}</h4>
+            </div>
+          {{/if_breadcrumb_title}}
+          {{#if_breadcrumb_trail}}
+            <div class="{{#if_breadcrumb_title}}col-xl-6{{/if_breadcrumb_title}}{{^if_breadcrumb_title}}col-xl-12{{/if_breadcrumb_title}}">
+              {{{ output.navbar }}}
+            </div>
+          {{/if_breadcrumb_trail}}
+        </div>
+      </div>
+    </div>
+  </section>
+{{/breadcrumb_s}}
+{{#breadcrumb_xs}}
+  <section class="inner_page_breadcrumb ccn_breadcrumb_s ccn_breadcrumb_xs {{{ breadcrumb_classes }}}">
+    <div class="container">
+      <div class="breadcrumb_content">
+        <div class="row">
+          {{#if_breadcrumb_title}}
+            <div class="{{#if_breadcrumb_trail}}col-xl-6{{/if_breadcrumb_trail}}{{^if_breadcrumb_trail}}col-xl-12{{/if_breadcrumb_trail}}">
+              <h4 class="breadcrumb_title">{{{ pageheading }}}</h4>
+            </div>
+          {{/if_breadcrumb_title}}
+          {{#if_breadcrumb_trail}}
+            <div class="{{#if_breadcrumb_title}}col-xl-6{{/if_breadcrumb_title}}{{^if_breadcrumb_title}}col-xl-12{{/if_breadcrumb_title}}">
+              {{{ output.navbar }}}
+            </div>
+          {{/if_breadcrumb_trail}}
+        </div>
+      </div>
+    </div>
+  </section>
+{{/breadcrumb_xs}}
+{{#breadcrumb_hidden}}
+  <section class="inner_page_breadcrumb ccn_breadcrumb_absent">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 text-center">
+        </div>
+      </div>
+    </div>
+  </section>
+{{/breadcrumb_hidden}}

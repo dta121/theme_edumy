@@ -1,0 +1,83 @@
+<div class="ccn_footer_surround">
+  <section class="footer_one">
+    <div class="container">
+      <div class="row">
+        {{#footer_column_1}}
+          <div class="{{{footer_col_1_class}}}">
+            <div class="footer_contact_widget">
+              {{#footer_col_1_title}}<h4>{{{ footer_col_1_title }}}</h4>{{/footer_col_1_title}}
+              {{#logo_footer}}
+                <div class="logo-widget pb25">
+                  {{#logo_image_footer}} <img class="img-fluid" src="{{{footerlogo1}}}" alt="{{ sitename }}" {{#logo_styles_footer}} style="{{{logo_styles_footer}}}" {{/logo_styles_footer}}>{{/logo_image_footer}}
+                  {{#logotype_footer}}<span>{{ sitename }}</span>{{/logotype_footer}}
+                </div>
+              {{/logo_footer}}
+              {{{ footer_col_1_body }}}
+            </div>
+          </div>
+        {{/footer_column_1}}
+        {{#footer_column_2}}
+          <div class="{{{footer_col_2_class}}}">
+            <div class="footer_company_widget">
+              <h4>{{{ footer_col_2_title }}}</h4>
+              {{{ footer_col_2_body }}}
+            </div>
+          </div>
+        {{/footer_column_2}}
+        {{#footer_column_3}}
+          <div class="{{{footer_col_3_class}}}">
+            <div class="footer_program_widget">
+              <h4>{{{ footer_col_3_title }}}</h4>
+              {{{ footer_col_3_body }}}
+            </div>
+          </div>
+        {{/footer_column_3}}
+        {{#footer_column_4}}
+          <div class="{{{footer_col_4_class}}}">
+            <div class="footer_support_widget">
+              <h4>{{{ footer_col_4_title }}}</h4>
+              {{{ footer_col_4_body }}}
+            </div>
+          </div>
+        {{/footer_column_4}}
+        {{#footer_column_5}}
+          <div class="{{{footer_col_5_class}}}">
+            <div class="footer_apps_widget">
+              <h4>{{{ footer_col_5_title }}}</h4>
+              {{{ footer_col_5_body }}}
+            </div>
+          </div>
+        {{/footer_column_5}}
+      </div>
+    </div>
+  </section>
+  <section class="footer_middle_area p0">
+    <div class="container">
+      <div class="row">
+        {{#cocoon_copyright}}
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <div class="copyright-widget">
+              <p>{{{ cocoon_copyright }}}</p>
+              <div class="tool_usertours-resettourcontainer"></div>
+            </div>
+          </div>
+        {{/cocoon_copyright}}
+        {{#footer_menu}}
+          <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6">
+            <div class="footer_menu_widget">
+              {{{footer_menu}}}
+            </div>
+          </div>
+        {{/footer_menu}}
+        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+          <div class="footer_social_widget">
+            <ul>
+              {{> theme_edumy/ccn_social_icons }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /.ccn_footer_surround -->

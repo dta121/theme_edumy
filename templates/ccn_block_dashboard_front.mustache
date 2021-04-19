@@ -1,0 +1,45 @@
+<div
+  id="{{id}}"
+  class="
+    {{class}}
+    {{#hidden}} hidden {{/hidden}}
+    {{#hascontrols}} block_with_controls {{/hascontrols}}
+    {{^ccn_block}} ccnDashBl mb30 {{/ccn_block}}"
+  style="{{ccn_style}}"
+  role="{{ariarole}}"
+  data-block="{{type}}"
+  {{#arialabel}} aria-label={{#quote}}{{{arialabel}}}{{/quote}} {{/arialabel}} {{^arialabel}} {{#hascontrols}} {{#title}} aria-labelledby="instance-{{blockinstanceid}}-header" {{/title}} {{/hascontrols}} {{/arialabel}}>
+
+  {{#showskiplink}}
+    <a href="#sb-{{skipid}}" class="sr-only sr-only-focusable">{{#str}}skipa, access, {{title}}{{/str}}</a>
+  {{/showskiplink}}
+
+  {{^ccn_block}}
+    {{#title}}<h4 id="instance-{{blockinstanceid}}-header" class="title ccnDashBlHd">{{{title}}}</h4>{{/title}}
+  {{/ccn_block}}
+
+  {{#hascontrols}}
+    <span id="instance-{{blockinstanceid}}-header" class="hidden ccn-hidden ccnInvisTitle">{{{title}}}</span>
+    <div class="ccnBlockControls">
+      {{#ccn_lc_vb}}
+        <div class="ccnBlockControls--lc-vb">
+          <a class="ccnBlockControls--lc-vb--btn" href="{{{ccn_lc_vb}}}"><span class="ccn-flaticon-magic-wand"></span> {{#str}} live_customizer, theme_edumy {{/str}}</a>
+        </div>
+      {{/ccn_lc_vb}}
+      <div class="block-controls header">
+        {{{controls}}}
+      </div>
+    </div>
+  {{/hascontrols}}
+
+  <div class="ccnBlockContent {{^ccn_block}} ccnDashBlCt {{/ccn_block}}">
+    {{{content}}}
+    {{{footer}}}
+    {{{annotation}}}
+  </div>
+
+  {{#showskiplink}}
+    <span id="sb-{{skipid}}"></span>
+  {{/showskiplink}}
+
+</div>

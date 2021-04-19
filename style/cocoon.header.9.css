@@ -1,0 +1,17 @@
+.ccn_header_style_9 header.header-nav.ccnHeader9.menu_style_home_one {
+  /* border-bottom-color: transparent; */
+}
+.ccn_header_style_9 header.header-nav.ccnHeader9 a.navbar_brand:before {
+  background-color: transparent;
+}
+.ccn_header_style_9 header.header-nav.ccnHeader9.menu_style_home_one .ace-responsive-menu>li>a {
+  text-transform: none;
+}
+.block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2)>.container.maxw1500 {
+  max-width: none;
+  padding: 0;
+  width: 100%;
+}
+.block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2) .banner-style-one .slide {
+  border-radius: 0;
+}

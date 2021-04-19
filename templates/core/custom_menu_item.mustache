@@ -1,0 +1,24 @@
+{{^divider}}
+{{#haschildren}}
+<li>
+    <a id="drop-down-{{uniqid}}" href="#">
+        {{{text}}}
+    </a>
+    <ul class="sub-menu" id="ccn-drop-down-menu-{{uniqid}}">
+        {{#children}}
+            {{^divider}}
+                <li><a href="{{{url}}}"><span class="title">{{{text}}}</span></a></li>
+            {{/divider}}
+            {{#divider}}
+                {{!<li><div class="dropdown-divider"></div></li>}}
+            {{/divider}}
+        {{/children}}
+    </ul>
+</li>
+{{/haschildren}}
+{{^haschildren}}
+<li>
+    <a href="{{{url}}}">{{{text}}}</a>
+</li>
+{{/haschildren}}
+{{/divider}}

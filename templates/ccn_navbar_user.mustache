@@ -1,0 +1,43 @@
+{{#isloggedin}}
+  <ul class="header_user_notif ccn-frontend-header_user_notif pull-right dn-smd">
+    {{#if_user_dark_mode_icon}}
+      <li class="user_setting ccn-settings-nav ccn-settings-nav-darkMode">
+        <div class="dropdown">
+          <a class="notification_icon" id="ccnToggleDarkMode"><span class="{{{user_dark_mode_icon}}}"></span></a>
+        </div>
+      </li>
+    {{/if_user_dark_mode_icon}}
+    {{{ output.navbar_plugin_output }}}
+    {{#if_user_navigation_icon}}
+      <li class="user_setting ccn-settings-nav">
+        <div class="dropdown">
+          <a class="notification_icon" href="#" data-toggle="dropdown"><span class="{{{user_navigation_icon}}}"></span></a>
+          <div class="dropdown-menu notification_dropdown_content">
+            <div class="so_heading">
+              <p>{{#str}} navigation, theme_edumy {{/str}}</p>
+            </div>
+            <div class="user_setting_content">
+              <div class="so_content" data-simplebar="init">
+                {{> theme_boost/flat_navigation }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    {{/if_user_navigation_icon}}
+    <li class="user_setting">
+      <div class="dropdown">
+        <a class="btn dropdown-toggle ccn-profile-menu" href="#" data-toggle="dropdown" aria-expanded="false"><img class="rounded-circle" src="{{{ user_profile_picture }}}" alt="{{{ user_username }}}"></a>
+        <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(-9px, -5px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="user_set_header">
+            <img class="float-left rounded-circle" src="{{{ user_profile_picture }}}" alt="{{{ profile_icon_username }}}">
+            <p>{{{ profile_icon_username }}} <br><span class="address">{{{ user_email }}}</span></p>
+          </div>
+          <div class="user_setting_content">
+            {{{ output.user_menu }}}
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+{{/isloggedin}}

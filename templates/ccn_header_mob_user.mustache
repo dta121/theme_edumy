@@ -1,0 +1,16 @@
+{{#isloggedin}}
+  <li>
+    <a href="#">{{#str}}navigation, theme_edumy{{/str}}</a>
+    <ul>{{> theme_boost/flat_navigation }}</ul>
+  </li>
+  <li>
+    <a href="#">{{{ user_username }}} <img class="rounded-circle" src="{{{ user_profile_picture }}}" alt="{{{ user_username }}}"></a>
+    <ul>{{{ output.user_menu }}}</ul>
+  </li>
+{{/isloggedin}}
+{{#notloggedin}}
+  <li><a href="{{{ ccnLogoUrl }}}/login/index.php"><span class="ccn-flaticon-user"></span> {{#str}}login, theme_edumy{{/str}}</a></li>
+  {{#signup_is_enabled}}
+   <li><a href="{{{ ccnLogoUrl }}}/login/signup.php"><span class="ccn-flaticon-login"></span> {{#str}} signup, theme_edumy {{/str}}</a></li>
+  {{/signup_is_enabled}}
+{{/notloggedin}}

@@ -1,0 +1,95 @@
+<div class="header_top home7">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-xl-3"></div>
+      <div class="col-lg-7 col-xl-9 p-xl-0">
+        <ul class="sign_up_btn home7 dn-smd text-right">
+          {{#cta_text}}
+            <li class="list-inline-item"><a href="{{{cta_link}}}" class="light_white"><i class="{{{ cta_icon }}}"></i><span class="dn-md">{{{cta_text}}}</span></a></li>
+          {{/cta_text}}
+          {{#phone}}
+            <li class="list-inline-item"><a class="light_white" href="tel:{{{phone}}}">{{{phone}}}</a></li>
+          {{/phone}}
+          {{#email_address}}
+            <li class="list-inline-item"><a class="light_white" href="mailto:{{{email_address}}}">{{{email_address}}}</a></li>
+          {{/email_address}}
+          {{#header_search_bar}}
+            <li class="list-inline-item dn-1366">
+              <div class="ht_search_widget">
+                <div class="header_search_widget">
+                  {{{ccn_globalsearch_navbar}}}
+                </div>
+              </div>
+            </li>
+          {{/header_search_bar}}
+          {{> theme_edumy/ccn_navbar_user_popup }}
+          {{!<li class="list-inline-item">
+            <div class="header_top_lang_widget_home6 home7">
+              <select class="selectpicker show-tick">
+                <option>English</option>
+                <option>Frenc</option>
+                <option>Italian</option>
+                <option>Spanish</option>
+                <option>Turkey</option>
+              </select>
+            </div>
+          </li>}}
+        </ul><!-- Button trigger modal -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Header Nav -->
+<header class="ccnHeader7 header-nav menu_style_home_seven main-menu">
+  <div class="container">
+    <!-- Ace Responsive Menu -->
+    <nav>
+      <!-- Menu Toggle btn-->
+      <div class="menu-toggle">
+        <img class="nav_logo_img img-fluid" src="{{{headerlogo3}}}" alt="{{{sitename}}}">
+        <button type="button" id="menu-btn">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      {{#logo_image}}
+        <a href="{{{ ccnLogoUrl }}}" class="navbar_brand float-left dn-smd">
+          <img class="logo1 home7 img-fluid" src="{{{headerlogo3}}}" alt="{{{sitename}}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>
+        </a>
+      {{/logo_image}}
+      {{#display_library_list}}
+        <ul class="mt20 pull-left mr20 ml10">
+          <li class="list-inline-item">
+            <div class="header_top_lang_widget">
+              <div class="ht-widget-container">
+                <div class="vertical-wrapper">
+                  <h2 class="title-vertical home3">
+                    <span class="text-title">{{#str}}library, theme_edumy{{/str}}</span> <i class="fa fa-angle-down show-down" aria-hidden="true"></i>
+                  </h2>
+                  <div class="content-vertical">
+                    {{{ ccn_librarylist }}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      {{/display_library_list}}
+
+        {{#header_search_icon}}
+        <div class="menu7_search home7 float-right">
+          {{> theme_edumy/ccn_navbar_search_icon }}
+          </div>
+        {{/header_search_icon}}
+
+      <!-- Responsive Menu Structure-->
+      <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+      <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+        {{{ output.custom_menu }}}
+        {{> theme_edumy/ccn_navbar_user }}
+      </ul>
+    </nav>
+    <!-- End of Responsive Menu -->
+  </div>
+</header>

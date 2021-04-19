@@ -1,0 +1,22 @@
+.usermenu:focus-within, div.dropdown-item:focus-within {
+  box-shadow: none;
+}
+#page-my-index {
+  background-color: #f9fafc;
+}
+#ccnSettingsMenuContainer .dropdown-item:focus-within:not(:hover) {
+  color: #212529;
+  background: inherit;
+}
+#ccnSettingsMenuContainer .dropdown-item:focus-within:not(:hover) a {
+  color: #212529;
+}
+#ccnSettingsMenuContainer .dropdown-item:active,
+#ccnSettingsMenuContainer .dropdown-item:hover,
+#ccnSettingsMenuContainer .dropdown-item:focus {
+  background: [[setting:color_primary]];
+  color: #fff;
+}
+#ccnSettingsMenuContainer .dropdown-item:hover a {
+  color: #fff;
+}

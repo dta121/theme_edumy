@@ -1,0 +1,85 @@
+{{{custom_css_dashboard}}}
+<header class="header-nav menu_style_home_one dashbord_pages navbar-scrolltofixed stricky main-menu {{#disable_stricky_dashboard}} ccn_disable_stricky {{/disable_stricky_dashboard}}">
+  <div class="container-fluid">
+    <nav>
+      <div class="menu-toggle">
+        <img class="nav_logo_img img-fluid" src="{{{headerlogo1}}}" alt="{{{sitename}}}">
+        <button type="button" id="menu-btn">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      {{#logo}}
+        <a href="{{{ ccnLogoUrl }}}" class="navbar_brand float-left dn-smd">
+          {{#dash_header_white}}
+            {{#logo_image}}<img class="logo1 img-fluid" src="{{{headerlogo2}}}" alt="{{{sitename}}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>{{/logo_image}}
+            {{#logo_image}}<img class="logo2 img-fluid" src="{{{headerlogo2}}}" alt="{{{sitename}}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>{{/logo_image}}
+          {{/dash_header_white}}
+          {{^dash_header_white}}
+            {{#logo_image}}<img class="logo1 img-fluid" src="{{{headerlogo1}}}" alt="{{{sitename}}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>{{/logo_image}}
+            {{#logo_image}}<img class="logo2 img-fluid" src="{{{headerlogo1}}}" alt="{{{sitename}}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>{{/logo_image}}
+          {{/dash_header_white}}
+          {{#logotype}}<span>{{{ sitename }}}</span>{{/logotype}}
+        </a>
+      {{/logo}}
+      {{#display_library_list}}
+        <ul class="mt20 pull-left mr20 ml10">
+          <li class="list-inline-item">
+            <div class="header_top_lang_widget">
+              <div class="ht-widget-container">
+                <div class="vertical-wrapper">
+                  <h2 class="title-vertical home3">
+                    <span class="text-title">{{#str}}library, theme_edumy{{/str}}</span> <i class="fa fa-angle-down show-down" aria-hidden="true"></i>
+                  </h2>
+                  <div class="content-vertical">
+                    {{{ ccn_librarylist }}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      {{/display_library_list}}
+      <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+        {{{ output.custom_menu }}}
+      </ul>
+      {{> theme_edumy/ccn_navbar_user }}
+    </nav>
+  </div>
+</header>
+<div id="page" class="stylehome1 h0">
+  <div class="mobile-menu">
+    <div class="header stylehome1 dashbord_mobile_logo dashbord_pages">
+      <div class="main_logo_home2">
+        <a href="{{{ ccnLogoUrl }}}" class="mobileBrand">
+          {{#logo_image}}
+            {{#headerlogo_mobile}}
+              <img class="nav_logo_img img-fluid float-left mt20" src="{{{headerlogo_mobile}}}" alt="{{{sitename}}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>
+            {{/headerlogo_mobile}}
+            {{^headerlogo_mobile}}
+              <img class="nav_logo_img img-fluid float-left mt20" src="{{{headerlogo1}}}" alt="{{{sitename}}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>
+            {{/headerlogo_mobile}}
+          {{/logo_image}}
+          {{#logotype}}<span>{{{sitename}}}</span>{{/logotype}}
+        </a>
+      </div>
+      <ul class="menu_bar_home2">
+        <li class="list-inline-item"></li>
+        <li class="list-inline-item"><a href="#menu"><span></span></a></li>
+      </ul>
+    </div>
+  </div><!-- /.mobile-menu -->
+  <nav id="menu" class="stylehome1">
+    <ul>
+      {{#display_library_list}}
+        <li class="ccn_mob_menu_library">
+          <a href="#vertical-menu">{{#str}}library, theme_edumy{{/str}} <i class="flaticon-right-arrow"></i></a>
+          {{{ ccn_librarylist }}}
+        </li>
+      {{/display_library_list}}
+      {{{ output.custom_menu }}}
+      {{> theme_edumy/ccn_header_mob_user }}
+    </ul>
+  </nav>
+</div>

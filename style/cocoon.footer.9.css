@@ -1,0 +1,44 @@
+.ccn_footer_style_9 .footer_middle_area,
+.ccn_footer_style_9 .footer_one,
+.ccn_footer_style_9 .footer_bottom_area {
+  background-color: transparent;
+}
+.ccn_footer_style_9 .ccn_footer_surround {
+  background-image: url([[cocoon:edumy]]/images/ccnPattern.png);
+  background-repeat: repeat repeat;
+  background-size: 72px;
+  background-color: #212e71;
+}
+.copyright-widget p,
+.footer_menu_widget ul li a,
+.footer_menu_widget a,
+.footer_contact_widget li a,
+.footer_company_widget li a,
+.footer_program_widget li a,
+.footer_support_widget li a,
+.footer_contact_widget p {
+  color: rgb(188, 198, 222);
+  font-family: [[setting:primary_font]];
+  font-size: 14px;
+}
+.footer_social_widget li a {
+  color: rgb(188, 198, 222);
+}
+.footer_apps_widget .app_grid .apple_btn, .footer_apps_widget .app_grid .play_store_btn {
+  background-color: transparent;
+  padding-left: 0;
+  height: 53px;
+}
+.app_grid .apple_btn .icon, .app_grid .play_store_btn .icon {
+  margin-left: 0;
+}
+.footer_apps_widget .app_grid .apple_btn span,
+.footer_apps_widget .app_grid .apple_btn span.subtitle,
+.footer_apps_widget .app_grid .play_store_btn span,
+.footer_apps_widget .app_grid .play_store_btn span.subtitle {
+  color: #fff;
+}
+
+.footer_apps_widget .app_grid .apple_btn:hover, .footer_apps_widget .app_grid .play_store_btn:hover {
+  background: transparent;
+}

@@ -1,0 +1,133 @@
+.header_top.home2 {
+  background-color: [[setting:color_header_style_2_top]];
+  height: 80px;
+  position: relative;
+  z-index: 999;
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu:before {
+  background-color: #191919;
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li,
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu {
+  background-color: #191919;
+}
+header.header-nav.ccnHeader2.home2.style_one {
+  display: table;
+  /* IE */
+  display: -webkit-box;
+  background-color: [[setting:color_header_style_2_bottom]];
+  position: relative;
+  z-index: 99 !important;
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu>li>a {
+  padding: 27px 40px 27px 5px;
+}
+header.header-nav.ccnHeader2.home2.style_one ul.sign_up_btn li {
+  position: relative;
+  margin-top: 6px;
+}
+/* header.header-nav.ccnHeader2.home2.style_one ul.sign_up_btn li:first-child:before {
+  background-color: rgba(255, 255, 255, .1);
+  content: "";
+  height: 30px;
+  right: -5px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+body.ccnUG header.header-nav.ccnHeader2.home2.style_one ul.sign_up_btn li:first-child:before {
+  top: -2px;
+} */
+.ccnHeader2 .sign_up_btn li .btn span {
+  padding-left: 10px;
+}
+header.header-nav.ccnHeader2.home2.style_one ul.sign_up_btn li a {
+  color: #a4a4a4;
+  font-family: "[[setting:primary_font]]";
+  font-size: 14px;
+  line-height: 1.2;
+}
+header.header-nav.ccnHeader2.home2.style_one ul.sign_up_btn li a:hover {
+  color: #ffffff;
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu {
+  border-radius: 5px;
+  padding: 15px 0;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(32, 32, 32, 0.15);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(32, 32, 32, 0.15);
+  -o-box-shadow: 0px 0px 50px 0px rgba(32, 32, 32, 0.15);
+  box-shadow: 0px 0px 50px 0px rgba(32, 32, 32, 0.15);
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li a {
+  border-bottom: 1px solid #dedede;
+  color: #a4a4a4;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li a:hover,
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li ul.sub-menu {
+  color: #ffffff;
+  padding-left: 20px;
+  box-shadow: none !important;
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li ul.sub-menu:before {
+  display: none;
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li a {
+  border-bottom: 1px solid #555;
+  color: #a4a4a4;
+  font-family: "[[setting:primary_font]]";
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li:last-child a,
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li:last-child a {
+  border-bottom: none;
+}
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li a:hover,
+header.header-nav.ccnHeader2.home2.style_one .ace-responsive-menu li ul.sub-menu li ul.sub-menu {
+  box-shadow: none !important;
+  color: #ffffff;
+  padding-left: 7px;
+}
+.ccn_header_style_2 header.header-nav.ccnHeader2.home2.style_one .mk-search-trigger {
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.ccnUG.ccn_header_style_2 header.header-nav.ccnHeader2.home2.style_one .mk-search-trigger {
+  top: 0;
+  margin-right: 11px;
+}
+.ccn_header_style_2 .header_top.home2 .ht_right_widget ul li a {
+  transition: all .2s ease;
+}
+.ccn_header_style_2 .header_top.home2 .ht_right_widget ul li a:hover {
+  color: #fff;
+}
+.block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2) {
+  margin-top: 15px;
+}
+@media (min-width: 1200px) {
+  header.header-nav.ccnHeader2.home2.style_one #search-button i {
+    color: rgba(255, 255, 255, .6);
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .ccn_header_style_2 .inner_page_breadcrumb {
+    margin-top: 94px;
+  }
+}
+@media only screen and (max-width: 1199.98px) {
+  .header_top.home2 {
+    display: none;
+  }
+}

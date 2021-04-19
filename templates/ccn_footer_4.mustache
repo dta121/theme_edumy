@@ -1,0 +1,41 @@
+<section class="footer_one home8 pb0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        {{#logo_footer}}
+          <div class="logo-widget home8 mb60">
+            {{#logo_image_footer}}<img class="img-fluid" src="{{{footerlogo1}}}" alt="{{ sitename }}" {{#logo_styles_footer}} style="{{{logo_styles_footer}}}" {{/logo_styles_footer}}>{{/logo_image_footer}}
+            {{#logotype_footer}}<span>{{ sitename }}</span>{{/logotype_footer}}
+          </div>
+        {{/logo_footer}}
+        <div class="footer_contact_widget home8 text-center">
+          {{{footer_col_1_body}}}
+        </div>
+        <div class="footer_social_widget home8 mt35 mb80">
+          <ul>
+            {{> theme_edumy/ccn_social_icons }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {{#cocoon_copyright}}
+        <div class="col-lg-6 col-xl-6">
+          <div class="copyright-widget text-center mt25">
+            <p>{{{ cocoon_copyright }}}</p>
+            <div class="tool_usertours-resettourcontainer"></div>
+          </div>
+        </div>
+      {{/cocoon_copyright}}
+      {{#footer_menu}}
+        <div class="col-lg-6 col-xl-6 pb25 pt25 text-right tac-smd">
+          <div class="footer_menu_widget home3">
+            {{{footer_menu}}}
+          </div>
+        </div>
+      {{/footer_menu}}
+    </div>
+  </div>
+</section>

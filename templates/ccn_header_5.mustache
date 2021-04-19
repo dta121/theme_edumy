@@ -1,0 +1,66 @@
+<header class="ccnHeader5 header-nav menu_style_home_five navbar-scrolltofixed stricky main-menu">
+  <div class="container-fluid">
+    <!-- Ace Responsive Menu -->
+    <nav>
+      <!-- Menu Toggle btn-->
+      <div class="menu-toggle">
+        <img class="nav_logo_img img-fluid" src="{{{headerlogo2}}}" alt="{{{sitename}}}">
+        <button type="button" id="menu-btn">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      {{#logo}}
+        <a href="{{{ ccnLogoUrl }}}" class="navbar_brand float-left dn-smd">
+          {{#logo_image}}<img class="logo1 img-fluid" src="{{{headerlogo2}}}" alt="{{{sitename}}}" {{#logo_styles}} style="{{{logo_styles}}}" {{/logo_styles}}>{{/logo_image}}
+          {{#logotype}}<span>{{{sitename}}}</span>{{/logotype}}
+        </a>
+      {{/logo}}
+      <div class="ht_left_widget home5 float-left">
+        <ul>
+          {{#display_library_list}}
+            <li class="list-inline-item">
+              <div class="header_top_lang_widget">
+                <div class="ht-widget-container">
+                  <div class="vertical-wrapper">
+                    <h2 class="title-vertical home5">
+                      <span class="text-title">{{#str}}library, theme_edumy{{/str}}</span> <i class="fa fa-angle-down show-down" aria-hidden="true"></i>
+                    </h2>
+                    <div class="content-vertical home5">
+                      {{{ ccn_librarylist }}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          {{/display_library_list}}
+          {{#header_search_bar}}
+            <li class="list-inline-item dn-1366">
+              <div class="ht_search_widget">
+                <div class="header_search_widget">
+                  {{{ccn_globalsearch_navbar}}}
+                </div>
+              </div>
+            </li>
+          {{/header_search_bar}}
+          {{#header_search_icon}}
+            <ul class="pull-left">
+              <li class="list-inline-item list_s">
+              {{> theme_edumy/ccn_navbar_search_icon }}
+            </li>
+            </ul>
+          {{/header_search_icon}}
+        </ul>
+      </div>
+      <ul class="home5_shop_reg_widget float-right mb0 mt20">
+        {{> theme_edumy/ccn_navbar_user_popup }}
+      </ul>
+      <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+        {{{ output.custom_menu }}}
+        {{> theme_edumy/ccn_navbar_user }}
+      </ul>
+    </nav>
+    <!-- End of Responsive Menu -->
+  </div>
+</header>

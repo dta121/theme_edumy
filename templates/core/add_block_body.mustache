@@ -1,0 +1,67 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template core/add_block_body
+
+    Template for the body of the add block modal.
+
+    Context variables required for this template:
+    * blocks - list of blocks containing name and title
+    * url - base url for links back to same page.
+
+    Example context (json):
+    {
+        "blocks" : [ { "name": "test", "title": "Test block" } ],
+        "url" : "?a=b"
+    }
+
+}}
+<div id="ccn-visualize-preview-container" class="ccnPreviewW" style="display:none">
+  <div class="container">
+    <div class="ccn-visualize-preview-body">
+      <div class="ccn-visualize-preview-content">
+        <div class="ccnVC">
+          <div class="ccnVC--inner">
+            <div id="ccnPrevPreviewContainer" class="ccnNavI"><span class="flaticon-left-arrow"></span></div>
+            <div id="ccnNextPreviewContainer" class="ccnNavI"><span class="flaticon-right-arrow-1"></span></div>
+            <div class="close" id="ccnClosePreviewContainer">×</div>
+            <h1 id="ccn-visualize-preview-container-title"></h1>
+            <h2 id="ccn-visualize-preview-container-title-2"></h2>
+            <p id="ccn-visualize-preview-container-detail"></p>
+            <div id="ccn-visualize-preview-container-img"></div>
+            <a id="ccn-visualize-preview-container-href" class="ccnBtn mt-3">{{#str}} select, theme_edumy {{/str}} <span class="ccn-flaticon-add"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="ccn-visualize-search-blocks">
+  <input class="form-control" placeholder="Search" type="text" size="15">
+</div>
+<div class="row ccn-visualize-block-group">
+  {{#blocks}}
+    <div class="col-xs-12 col-md-4 col-xl-3 ccn-control-visualize-block--col" data-ccn-name="{{name}}">
+      <a href="{{url}}&amp;bui_addblock={{name}}" class="ccn-control-visualize-block" data-ccn-title="{{title}}" data-ccn-name="{{name}}" data-ccn-href="{{url}}&amp;bui_addblock={{name}}">
+        <div class="ccn-control-visualize-block-inner">
+          <h5 class="ccn-control-visualize-block-title">{{title}}</h5>
+          <div class="ccn-control-visualize-block-img ccnImg"></div>
+        </div>
+      </a>
+    </div>
+  {{/blocks}}
+</div>

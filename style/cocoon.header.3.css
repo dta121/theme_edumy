@@ -1,0 +1,274 @@
+/*
+ * @ccnNote: ccn_header_style_3, ccn_hero_1. Please append ccn_context_frontend to main header styles or elements contained therein.
+ * @ccnNote: We MUST use 'ccn_morph' class for elements that have been restructured with JavaScript. Important because Live Customizer now allows them in the page body.
+ *
+ */
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three.navbar-scrolltofixed:not(.stricky-fixed) {
+  z-index: 999 !important;
+  position: absolute !important;
+  top: 70px !important;
+  background-color: transparent;
+}
+.ccn_context_frontend:not(.ccn_hero_1) .header_top.home3 {
+  display: none;
+}
+.ccn_context_frontend:not(.ccn_hero_1) header.header-nav.ccnHeader3.menu_style_home_three.navbar-scrolltofixed:not(.stricky-fixed) {
+  top: 0 !important;
+  position: absolute !important;
+  background-color: [[setting:color_header_style_3_top]];
+}
+.header_top.home3 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header_top.home3 {
+  height: 70px;
+}
+.header_top.home3 .container-fluid {
+  padding: 0 70px;
+  position: relative;
+  z-index: 9;
+}
+.home3_header_top_contact {
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+.home3_header_top_contact li:first-child,
+.home4_header_top_contact li:first-child {
+  margin-right: 35px;
+}
+.home3_header_top_contact li a,
+.home4_header_top_contact li a,
+.home4_header_top_contact li>em {
+  color: #ffffff;
+  font-style: normal;
+}
+.ht_right_widget ul li a,
+.home3_header_top_contact li a {
+  font-family: "[[setting:primary_font]]";
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three.navbar-scrolltofixed .ht_left_widget.home3 .header_top_lang_widget {
+  margin-top: 5px;
+}
+.ht_left_widget.home3 .cd-dropdown-trigger,
+.ht_left_widget.home3 .no-touch .cd-dropdown-trigger.dropdown-is-active:hover,
+.ht_left_widget.home3 .no-touch .cd-dropdown-trigger:hover {
+  background-color: #ffffff !important;
+  color: #0a0a0a;
+}
+.ht_left_widget.home3 .cd-dropdown-trigger {
+  text-transform: capitalize;
+}
+.ht_left_widget.home3 .cd-dropdown-trigger::before,
+.ht_left_widget.home3 .cd-dropdown-trigger::after {
+  background-color: #0a0a0a;
+}
+.ccn_context_frontend.ccn_hero_1 header.header-nav.ccnHeader3.menu_style_home_three a.navbar_brand {
+  margin-top: 10px;
+}
+.ccn_context_frontend:not(.ccn_hero_1) header.header-nav.ccnHeader3.menu_style_home_three a.navbar_brand {
+  margin-top: 14px;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ht_left_widget.home3 ul li:last-child {
+  margin-top: 5px;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .header_search_widget .mailchimp_form .form-control {
+  margin-top: 10px;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .header_search_widget .mailchimp_form button {
+  background-color: transparent;
+  margin-top: 10px;
+}
+.ccn_header_style_3.ccn_context_frontend:not(.ccn_hero_1) header.header-nav.ccnHeader3.menu_style_home_three .mk-search-trigger {
+  position: relative;
+  top: 2px;
+}
+.ccn_header_style_3.ccn_context_frontend.ccn_hero_1 header.header-nav.ccnHeader3.menu_style_home_three .mk-search-trigger {
+  top: -1px;
+}
+.ccn_header_style_3.ccn_context_frontend.ccn_hero_1 .block_cocoon_hero_1 .ccnBlockControls {
+  margin-top: 80px;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three {
+  background-color: #051925;
+  padding: 0;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three a.navbar_brand:before {
+  background-color: #6077dd;
+  height: 80px;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu>li {
+  float: right;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu li ul.sub-menu {
+  background-color: #051925;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu li ul.sub-menu:nth-child(3) {
+  left: 0;
+  margin-left: 0;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu li a,
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu li ul.sub-menu li a {
+  color: #ffffff;
+  font-family: "[[setting:primary_font]]", sans-serif;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu li ul.sub-menu li a {
+  border-bottom: 1px solid #2e2e2e;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu li ul.sub-menu li:last-child a {
+  border-bottom: none;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu>li.last a {
+  padding-right: 5px;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu>li .sub-menu li:hover a,
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_four .ace-responsive-menu>li .sub-menu li:hover a,
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_five .ace-responsive-menu>li .sub-menu li:hover a,
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_six .ace-responsive-menu>li .sub-menu li:hover a {
+  padding-left: 20px;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu li.user_setting .dropdown a {
+  color: #0a0a0a;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .container-fluid {
+  padding: 0 70px;
+}
+.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three a.navbar_brand:before {
+  display: none;
+}
+.sign_up_btn.home3 .btn {
+  font-family: "[[setting:primary_font]]";
+  font-size: 14px;
+  line-height: 1.2;
+}
+.sign_up_btn.home3 .btn i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.sign_up_btn.home3 a.btn.cart_btn span {
+  line-height: 17px;
+}
+.stylehome1.home3 a.mm-listitem__text,
+.stylehome1.home3 a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text {
+  color: #cecff9;
+}
+.stylehome1.home3 a.mm-listitem__text:hover,
+.stylehome1.home3 a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text:hover {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+.logo-widget.home3 span {
+  color: #051925;
+}
+.ccn_context_frontend .inner_page_breadcrumb {
+  margin-top: 86px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+@media (max-width:1700px) and (min-width: 1200px) {
+  .ccn_header_style_3.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ht_left_widget.home3 {
+    margin-top: 15px;
+  }
+  .ccn_header_style_3.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ht_left_widget.home3 ul li.list-inline-item:nth-child(2) {
+    display: none;
+  }
+  .ccn_header_style_3.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ht_left_widget.home3 ul li.list-inline-item:nth-child(2) {
+    display: none;
+  }
+  .ccn_header_style_3.ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ht_left_widget.home3 ul li:last-child {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width:1366px) {
+  .ht_left_widget.home3 .header_search_widget .mailchimp_form .form-control {
+    width: 200px;
+  }
+  header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu>li>a {
+    padding: 30px 30px 30px 10px;
+  }
+  /* header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu>li>a {
+    padding: 20px 30px 30px 10px;
+  } */
+}
+@media only screen and (max-width: 1199.98px) {
+  .stylehome1.home3:before {
+    background-color: transparent !important;
+  }
+  .stylehome1.home3 .mm-navbar,
+  .stylehome1.home3 .mm-panel {
+    background-color: #1c327e !important;
+  }
+  .header_top.home3 .container-fluid,
+  .ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .container-fluid {
+    padding: 0 30px;
+  }
+  .ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ht_left_widget.home3.float-left {
+    float: left !important;
+    margin-top: 20px;
+  }
+  .ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three a.navbar_brand {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+  .ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three .ht_left_widget ul li.list-inline-item:first-child {
+    margin-right: 0;
+  }
+  .ccn_context_frontend header.header-nav.ccnHeader3.menu_style_home_three.navbar-scrolltofixed .ht_left_widget.home3 .header_top_lang_widget {
+    margin-top: 0;
+  }
+  .header_top.home3 {
+    background-color: #051925;
+  }
+  .search_overlay.home3 .mk-search-trigger {
+    margin-left: 10px;
+  }
+  header.header-nav.ccnHeader3.menu_style_home_three .ace-responsive-menu>li>a {
+    padding: 30px 10px 30px 10px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .header_top.home3 {
+    display: none;
+  }
+}
+/* This is the reusable code block we use for headers who really desire to be static positioned, but we can't because of scroll jump. Margin-top them behind the absolute header instead. */
+@media only screen and (min-width: 1200px) {
+  .ccn_header_style_3 .block_cocoon_slider_1.ccn_morphed,
+  .ccn_header_style_3 .block_cocoon_slider_1_v.ccn_morphed,
+  .ccn_header_style_3 .block_cocoon_slider_2.ccn_morphed,
+  .ccn_header_style_3 .block_cocoon_slider_3.ccn_morphed,
+  .ccn_header_style_3 .block_cocoon_slider_4.ccn_morphed,
+  .ccn_header_style_3 .block_cocoon_slider_5.ccn_morphed,
+  .ccn_header_style_3 .block_cocoon_slider_6.ccn_morphed,
+  .ccn_header_style_3 .block_cocoon_hero_2.ccn_morphed,
+  .ccn_header_style_3 .block_cocoon_hero_3.ccn_morphed,
+  .ccn_header_style_3 .block_cocoon_hero_4.ccn_morphed {
+    margin-top: 86px;
+  }
+  .block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2) {
+    margin-top: 103px;
+  }
+}
+@media (min-width: 1600px){
+  .ccn_header_style_3.ccn_context_frontend:not(.ccn_hero_1) header.header-nav.ccnHeader3.menu_style_home_three .mk-search-trigger {
+    top: 13px;
+  }
+}
+@media (max-width:1200px){
+  .ccn_context_frontend .inner_page_breadcrumb {
+    margin-top: 0;
+  }
+  .block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2)>.container.maxw1500 {
+    max-width: none;
+    padding: 0;
+    width: 100%;
+  }
+  .block_cocoon_slider_7.ccn_morphed .home14-slider:not(.style2) .banner-style-one .slide {
+    border-radius: 0;
+  }
+}
